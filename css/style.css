@@ -1,0 +1,326 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 18px !important;
+    scroll-behavior:smooth;
+}
+.container{
+    width: 100% !important;
+}
+:root{
+    --main-color:#FEE170;
+}
+/* heading */
+.specail-heading h1{
+    font-size: 50px !important;
+    
+}
+.specail-heading p{
+    font-size:20px !important;
+
+}
+/* heading */
+header .carousel h3{
+    font-size: 60px;
+    color: var(--main-color)!important;
+}
+header .carousel p{
+    font-size: 40px;
+    color:var(--main-color)!important;
+}
+.carousel-indicators{
+    position: relative !important;
+    top: -20px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height:10px;
+    border: 2px solid var(--main-color)!important;
+    background-color: transparent !important;
+}
+.carousel-control-next {
+    position: absolute  ;
+    height:80% !important;
+}
+.carousel-control-prev {
+    position: absolute  ;
+    height:80% !important;
+}
+@media screen and (max-width:991px) {
+    .carousel-control-prev {
+        position: absolute  ;
+        height:50% !important;
+    }
+    .carousel-control-next {
+        position: absolute  ;
+        height:50% !important;
+    }
+}
+.carousel-control-next-icon{
+    position: absolute;
+    padding: 20px;
+}
+.carousel-control-prev-icon{
+    position: absolute;
+    padding: 20px;
+}
+/* navbar  */
+.navbar{
+    margin-top: -50px !important;
+}
+header nav a  {
+    font-size: 18px !important;
+}
+.home-anchor{
+    color: var(--main-color) !important;
+}
+/* end header and navbar */
+/* start-about  */
+.about p {
+    font-size: 16px !important;
+}
+.about i {
+padding:3px;
+font-size: 8px;
+}
+.about p{
+    line-height:1.26em;
+}
+.about ul{
+    background-color:#EDEDED;
+}
+/* end-about  */
+/* start-skills */
+.skills{
+background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(../img/slide3.jpg);
+background-position: center center;
+background-size: cover;
+}
+.skills i{
+    color: var(--main-color) !important;
+    border-radius: 50%;
+    padding: 25px;
+    border: 1px solid white;
+}
+.skills .skill-item p{
+    color:#9E9E9E !important;
+    font-family: 'Open sans' sans-serif;
+    font-weight: 300;
+}
+/* end-skills */
+/* start-protoflio */
+.nav-pills .nav-link{
+    color: gray !important;
+    border: 1px solid gray !important;
+}
+.nav-pills .nav-link.active{
+    color: var(--main-color) !important;
+    background-color: black !important;
+    border: 1px solid gray !important;
+}
+@media screen and (max-width:991px) {
+    .protfolio ul{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width:500px) {
+    .protfolio ul li{
+        margin: 1px;
+    }
+}
+.protfolio .item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.protfolio .tab-content .layer{
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    transition: all 0.5s;
+}
+.protfolio .item p{
+display: none;
+}
+.protfolio .item .layer h3{
+    margin-top: 70px;
+    color: var(--main-color) !important ;
+    font-size: 30px;
+    transition: 0.5s all;
+}
+.protfolio .item:hover h3 {
+    margin-top: 15px;
+    color: white !important;
+    font-size:30px;
+}
+.protfolio .item:hover .layer{
+    background-color: rgba(70,50,0, 0.5);
+}
+.protfolio .item .item-body{
+    margin: auto;
+    width: 95%;
+    transition: 1s all;
+}
+.protfolio .item .item-body span{
+    font-size: 40px !important;
+    color: var(--main-color) !important;
+}
+.protfolio .item:hover span{
+    color: white !important;
+}
+.protfolio .item:hover .item-body{
+    border: 1px solid white;
+    height:200px;
+}
+.protfolio .item:hover p{
+    display: inline;
+}
+/* end-protflio */
+/* awards */
+.awards .date-title span{
+    background-color: var(--main-color) !important;
+    padding: 15px  40px;
+    width: 200px !important;
+    color: black !important;
+    font-size: 25px !important;
+    border-radius: 10px;
+    position: relative;
+}
+.awards .date-title p {
+    width: 10px;
+    height:10px;
+    border-radius: 50%;
+    background-color: black;
+    padding: 7px;
+    position: relative;
+    top: 157px;
+}
+.awards .date-title p.dot2{
+    width: 10px;
+    height:10px;
+    border-radius: 50%;
+    background-color: black;
+    padding: 7px;
+    position: relative;
+    top:242px;
+}
+.awards .date-title span::after{
+position: absolute;
+content: " ";
+top:100%;
+left: 50%;
+border-style: solid;
+padding: 150%;
+border-width:1px;
+border-color: transparent transparent transparent red;
+}
+.awards .news-item{
+    position: relative;
+}
+.awards .news-item2{
+    position: relative;
+}
+.awards .news-item::after{
+position: absolute;
+content: "";
+top:50%;
+left: 100%;
+border-style: solid;
+border-width: 30px;
+border-color: transparent transparent transparent transparent;
+transition: 1s all ;
+}
+.awards .news-item2::after{
+position: absolute;
+content: "";
+top:50%;
+right: 100%;
+border-style: solid;
+border-width: 30px;
+border-color: transparent transparent transparent transparent;
+transition: 1s all ;
+}
+.awards .news-item:hover ::after{
+position: absolute;
+content: "";
+top:25%;
+left: 100%;
+border-style: solid;
+border-width: 30px;
+border-color: transparent transparent transparent black;
+}
+.awards .news-item2:hover ::after{
+position: absolute;
+content: "";
+top:50%;
+right: 100%;
+border-style: solid;
+border-width: 30px;
+border-color: transparent black transparent transparent ;
+}
+.awards .date p{
+    color: var(--main-color) !important;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.awards .news-content p,span,a{
+    color: #9E9E9E !important;
+    font-size: 16px !important;
+}
+.awards .news-content i{
+    color: var(--main-color) !important; 
+}
+.awards .col-md-5 a,i{
+    transition: 0.5s all;
+}
+.awards .col-md-5:hover a,i{
+    margin-left: 30px;
+}
+.awards .col-md-5:hover p,span,a,i {
+    color: white !important;
+}
+/* end-awards */
+
+/* contact-us */
+.contact{
+    margin-top: 100px !important;
+}
+.contact span{
+    font-size:20px !important;
+    color: #9E9E9E !important;
+    margin: 10px;
+}
+.contact p{
+    font-size:20px !important;
+}
+.contact .btn{
+    background-color: var(--main-color);
+    font-size: 25px;
+    transition: 0.5s all;
+}
+.contact .btn:hover{
+    background-color: white;
+    font-size: 25px;
+    color: black;
+}
+footer{
+    border-top: 1px solid gray;
+    
+}
+footer p a{
+    color: var(--main-color) !important;
+    text-decoration: none !important;
+}
+/* end-contact-us */
